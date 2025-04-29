@@ -1,0 +1,15 @@
+.navbar{
+    margin: 10px;
+    text-align: center;
+     background-color: #00a2ff; 
+        display: flex;
+        justify-content: space-around;
+        padding:10px 10px;
+}
+.navbar,a{
+    color: white;
+    font-size: large;
+}
+.navbar,a:hover{
+    color: white;
+}
