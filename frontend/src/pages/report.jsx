@@ -1,5 +1,7 @@
 import { useState,useEffect } from "react";
 import './form.css'
+import { ArrowDown } from "lucide-react";
+
 function Report() {
 
 
@@ -20,7 +22,7 @@ useEffect(()=>{
 });
     return (
       <div>
-        <h1 style={{color:'black'}}>Products in Stock</h1>
+        <h1 style={{ color: "black" }}>Products in Stock</h1>
         <table>
           <thead>
             <tr>
@@ -38,17 +40,22 @@ useEffect(()=>{
                 <td>{prod.prod_quantity}</td>
                 <td>
                   {prod.prod_quantity == 0 ? (
-                    <span style={{ color: 'red' }}>Byashize muri stock</span>
+                    <span style={{ color: "red" }}>Byashize muri stock</span>
                   ) : prod.prod_quantity <= 2 ? (
-                    <span style={{ color: 'orange' }}>Nibikeya muri stock</span>
+                    <span style={{ color: "orange" }}>Nibikeya muri stock</span>
                   ) : (
-                    <span style={{ color: 'green' }}>Birahagije muri stock</span>
+                    <span style={{ color: "green" }}>
+                      Birahagije muri stock
+                    </span>
                   )}
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
+        <button onClick={()=>window.print()} className="down">
+         <ArrowDown size={18}/> Download 
+        </button>
       </div>
     );
   };

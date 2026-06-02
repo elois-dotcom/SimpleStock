@@ -5,11 +5,32 @@
         display: flex;
         justify-content: space-around;
         padding:10px 10px;
+        gap: 20px;
 }
-.navbar,a{
+.navbar a{
     color: white;
     font-size: large;
+    align-items: center;
+    gap: 20px;
+
 }
 .navbar,a:hover{
     color: white;
+}.log{
+    background-color: tomato;
+   height: 30px;
+   width: 130px;
+   justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 5px;
+}
+.log:hover{
+    text-decoration: none;
+}
+span{
+    color: white;
+}
+.Bot{
+    cursor: pointer;
 }

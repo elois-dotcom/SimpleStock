@@ -26,14 +26,20 @@ h1{
         justify-content: center;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
-        
        flex-direction: column;
+    }
+    span{
+        color: #00a2ff;
+    }
+    .welcome{
+        font-size: 20px;
     }
     input{
         width: 600px;
         padding: 8px;
         margin-bottom: 2px;
         border-radius: 3px;
+        margin-right: 60%;
         border: none;
         background-color: #b3b1b117;
         border: 1px solid rgba(0, 0, 0, 0.123);
@@ -74,5 +80,14 @@ h1{
     }
     .create{
         margin-top: 10px;
+    }
+    .forgot-password-link{
+        color: rgb(86, 86, 86);
+        font-size: 16px;
+        font-weight: lighter;
+        
+    }
+    .forgot-password-link:hover{
+        color: #353232;
     }
     

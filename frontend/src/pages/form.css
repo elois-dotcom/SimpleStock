@@ -40,3 +40,11 @@ td{
     width:  100px;
 
 }
+.down{
+    width: 170px;
+    margin-left: 87%; 
+    justify-content: center;
+    align-items: center;
+    background-color:green;
+    
+}
