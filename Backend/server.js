@@ -20,10 +20,10 @@ app.use(express.json()); //allows the json body
 ///database connection
 
 const db = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'',
-    database:'stock'
+    host:process.env.HOST_DB,
+    user:process.env.USER_DB,
+    password:process.env.PSSWD_DB,
+    database:process.env.DB
 });
   // testing the connection.
 db.connect((err)=>{
